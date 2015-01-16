@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+
+  <head>
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="app.css">
+    <link rel="stylesheet" type="text/css" href="semantic.css">
+  </head>
+
+  <body>
+    <article class="player">
+      <audio data-title="food" src="favourite-food.mp3" type="audio/mpeg"></audio>
+      <audio data-title="hunt" src="thrill-of-the-hunt.mp3" type="audio/mpeg"></audio>
+      <audio data-title="blues" src="transgender-dysphoria-blues.mp3" type="audio/mpeg"></audio>
+      <audio data-title="from" src="where-im-from.mp3" type="audio/mpeg"></audio>
+
+    <h2 class="select">Select a Song!</h2>
+
+    <div class="tracks">
+      <script type="text/template" id="tracksTemplate">
+        {{#tracks}}
+        <div class="ui segment">
+          <i class="fa fa-play" data-title="{{title}}"></i><span><h2>    {{title}} by {{artist}}</h2></span>
+        </div>
+        {{/tracks}}
+      </script>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.js"></script>
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/mustache/mustache.js"></script>
+    <script src="app.js" type="text/javascript" charset="utf-8"></script>
+  </body>
+
+</html>
