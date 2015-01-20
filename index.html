@@ -15,7 +15,7 @@
       <script type="text/template" id="tracksTemplate">
         {{#tracks}}
         <div class="ui vertical segment">
-          <i class="fa fa-play" data-id="{{id}}" data-title="{{title}}"></i><span><h2>    {{title}} by {{artist}}</h2></span>
+          <i class="fa fa-play" data-id="{{id}}" data-title="{{title}}" data-file="listen/tracks/{{file}}.mp3"></i><span><h2>    {{title}} by {{artist}}</h2></span>
           <audio src="listen/tracks/{{file}}.mp3" id="{{id}}" preload="none"></audio>
         </div>
         {{/tracks}}
