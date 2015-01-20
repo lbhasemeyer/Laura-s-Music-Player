@@ -3,6 +3,9 @@ $('.tracks').on('click', '.fa-play', function() {
   $(this).removeClass('fa-play').addClass('fa-stop');
   var playing = $(this).data('title');
   $('h2.select').html("Now Playing:  " + playing);
+  $('audio').each(function () {
+    this.pause();
+  });
   var id = $(this).data('id');
   document.getElementById(id).play();
 });
