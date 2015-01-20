@@ -5,6 +5,7 @@ $('.tracks').on('click', '.fa-play', function() {
   $('h2.select').html("Now Playing:  " + playing);
   $('audio').each(function () {
     this.pause();
+    this.currentTime = 0;
   });
   var id = $(this).data('id');
   document.getElementById(id).play();
